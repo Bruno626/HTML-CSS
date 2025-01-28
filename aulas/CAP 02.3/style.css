@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Android";
+  src: url(fontes/idroid.otf);
+}
+
+:root {
+  --cor1: #c5ebd6;
+  --cor2: #83e1ad;
+  --cor3: #3ddc84;
+  --cor4: #2fa866;
+  --cor5: #1a5c37;
+
+  --font-padrao: Arial, Helvetica, sans-serif;
+  --font-android: "Android";
+}
+
+body {
+  background-color: #83e1ad;
+  font-family: var(--font-padrao);
+  color: #ffffff;
+  text-align: center;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+strong {
+  color: #ffffff;
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+  padding: 10px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: 50px;
+  box-shadow: 5px 5px 5px black;
+}
+
+header h1 {
+  color: #3ddc84;
+  font-family: var(--font-android);
+  text-shadow: 5px 5px 5px black;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-color: #3ddc84;
+  padding: 1px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 1px;
+  transition-duration: 1s;
+}
+
+nav a {
+  color: rgb(0, 0, 255);
+}
+
+nav a:visited {
+  color: rgb(0, 0, 0);
+}
+
+nav a::before {
+  content: "✦";
+}
+
+nav a::after {
+  content: "✦";
+}
+
+a {
+  text-decoration: none;
+}
+
+a::after {
+  content: "🔗";
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: rgb(0, 0, 255);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+main {
+  background-image: linear-gradient(to top, var(--cor4), var(--cor5));
+  padding: 10px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: 50px;
+  box-shadow: 5px 5px 5px black;
+}
+
+main h2 {
+  color: #3ddc84;
+  font-family: var(--font-android);
+  text-shadow: 5px 5px 5px black;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+main aside {
+  background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+  color: #ffffff;
+  padding: 10px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: 25px;
+  box-shadow: 5px 5px 5px black;
+}
+
+/* main ul { columns: 2; } */
+
+main li {
+  display: inline-block;
+  margin: 15px;
+}
+
+main img#droid {
+  width: 75%;
+}
+
+main img#irina {
+  width: 75%;
+  border-radius: 25px;
+}
+
+main img#android {
+  width: 25%;
+}
+
+main iframe {
+  width: 75%;
+  border-radius: 25px;
+}
+
+footer {
+  background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+  text-align: center;
+  padding: 10px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: 50px;
+  box-shadow: 5px 5px 5px black;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGS E CAIXAS</title>
+
+    <!--
+    header - CABECALHO / main - PRINCIPAL / footer - RODAPE
+    nav - LINKS / article - TEXTO (nav, article - NOVAS CAIXAS PARA OS CONTEUDOS, ORGANIZACAO)
+    -->
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(128, 128, 128);
+        }
+
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border: 5px solid blue;
+            border-radius: 20px;
+        }
+
+        nav{
+            background-color: gray;
+            padding: 10px;
+            margin: 10px;
+            border: 5px dashed black;
+            border-radius: 20px;
+        }
+
+        nav>a{
+            text-decoration: none;  
+            padding: 5px;
+            margin: 5px;
+            border: 2.5px dotted purple;
+            border-radius: 20px;
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border: 5px solid blue;
+            border-radius: 20px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        article{
+            background-color: lightgray;
+            text-align: justify;
+            padding: 5px;
+            margin: 5px;
+            border: 5px dashed black;
+            border-radius: 40px 0px;
+        }
+
+        article>aside{
+            background-color: gray;
+            padding: 5px;
+            margin: 5px;
+            border: 2.5px dotted purple;
+            border-radius: 20px;
+        }
+
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+
+            padding: 5px;
+            margin: 5px;
+
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <h1>SITE</h1>
+        <nav>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="NOTICIA">
+            <article>
+                <h2>NOTICIAS SOBRE O PARANA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro veniam voluptatem, necessitatibus possimus odit, dolore quia assumenda dicta, magnam animi nesciunt nisi non tempore inventore magni rerum quas eligendi perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, repellat. Tenetur praesentium recusandae iste illum fugiat in, enim delectus non ab voluptates qui eaque, deserunt consectetur impedit dignissimos adipisci ducimus!</p>
+                <aside>
+                    <p>Artigo escrito por ...</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        DESENVOLVIDO POR ...
+    </footer>
+</body>
+</html>

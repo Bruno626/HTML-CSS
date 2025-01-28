@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Winter;
+  src: url(Winter\ Minie.otf), url(Winter\ Minie.ttf);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+
+  /*font-size: 16px; - Tamanho das letras*/
+  /*Medidas Absolutas: cm, mm, in, px, pt, pc*/
+  /*Medidas Relativas: em, ex rem, vw, vh, %*/
+  /*Recomendado usar: PX ou EM - 16px = 1em*/
+
+  /*font-weight: - Grossura das letras*/
+  /*Medidas: 100 ... 900, OU lighter, normal, bolder*/
+
+  /*font-style: normal, italic, oblique*/
+  /*text-decoration: underline;*/
+
+  /*font = font-style + font-weight + font-size + font-family*/
+
+  /* *{} = Deixando algo nesse local, vai influenciar em todo o conteudo*/
+}
+
+body {
+  background-image: linear-gradient(to top, #bcb8b1, #8a817c, #463f3a);
+  /*to top ^, to bottom v, to right >, to left <, 45deg, 90 deg, ...*/
+  /*background-image - cores tela de fundo*/
+
+  /*background-image: radial-gradient(circle, #bcb8b1, #8a817c, #463f3a);*/
+  /*background-image - cores tela de fundo*/
+
+  background-attachment: fixed;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  width: 1000px;
+  padding: 50px;
+  margin: auto;
+  /*
+  border-radius - cantos arredondados
+  box-shadow - sombra (caixa branca) 
+  width - largura (caixa branca)
+  height - altura (caixa branca)
+  padding - espaco entre letras e as bordas (caixa branca)
+  margin - texto (esquerda, centralizado, direita)
+  */
+}
+
+h1 {
+  color: green;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+
+  font: italic 500 2.5em "Winter";
+}
+
+h2 {
+  font-family: "Winter";
+  color: blue;
+}
+
+p {
+  text-align: justify;
+  text-indent: 20px;
+
+  /*text-align - alinhamento texto (lerf, right, center, justify)*/
+  /*text-shadow - sombra do texto*/
+  /*text-indent - espaço inicial do inicio a cada paragrafo*/
+  /*line-height: N em; - espaço entre linhas*/
+}

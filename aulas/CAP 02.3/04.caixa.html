@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAIXA</title>
+
+    <!-- 
+    PALAVRA DENTRO DE "CAIXA"- TEM ALTURA (HEIGHT) / LARGURA (WIDTH) / PRENCHIMENTO ENTRE PALAVRA E BORDA (PADDING) BORDA (BORDER) / CONTORNO ENTRE BORDA E MARGEM (OUTLINE) / MARGEM FORA DA BORDA (MARGIN)
+
+    CAIXAS BOX-LEVEL - PULA PARA LINHA DE BAIXO E OCUPA TODA A LARGURA
+    EX: DIV - H1/H6 - P - MAIN - HEADER - NAV - ARTICLE - ASIDE - FOOTER - FORM - VIDEO
+
+    CAIXAS INLINE-LEVEL - CONTINUA NA MESMA LINHA E OCUPA A LARGURA NECESSARIA
+    EX: SPAN - A - CODE - SMALL - STRONG - EM - SUP/SUB - LABEL - BUTTON - INPUT - SELECT
+    -->
+
+    <style>
+        h1{ /*BOX-LEVEL*/
+            text-align: center;
+            
+            background-color: gray;
+            height: 50px;
+            width: 350px;
+
+            padding-top: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            /*4 VALORES PODEM SER SUBSTITUIDOS POR: padding: 25px 25px 25px 25px*/
+            /*CASO SEJAM VALORES IGUAIS, PODE COLOCAR APENAS 1 VEZ, EM VEZ DE 4X 25px -> 1x 25px*/
+            
+            border: 10px;
+            border-style: solid;
+            border-color: black;
+            /*3 VALORES PODEM SER SUBSTITUIDOS POR: border: 10px solid black*/
+
+            /*border-style: solid, dashed, dotted, double, */
+
+            outline: 5PX;
+            outline-style: dotted;
+            outline-color: blue;
+            /*3 VALORES PODEM SER SUBSTITUIDOS POR: outline: 5px dotted blue*/
+
+            margin-top: 25px;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            margin-left: 25px;
+            /*4 VALORES PODEM SER SUBSTITUIDOS POR: margin: 25px 25px 25px 25px*/
+            /*CASO SEJAM VALORES IGUAIS, PODE COLOCAR APENAS 1 VEZ, EM VEZ DE 4X 25px -> 1x 25px*/
+
+            /*margin: auto - CAIXA VAI FICAR CENTRALIZADA*/
+            /*margin 25px auto 50px auto - DESTA FORMA ESQ E DIR VAO FICAR CENTRALIZADAS*/
+        }
+
+        a{  /*INLINE-LEVEL*/
+
+            /*CASO DESEJAR, PODE TRANSFORMAR BOX <-> INLINE - COLOCAR: display: block (box) OU inline (INLINE)*/
+            /*PODE COLOCAR O INLINE-LEVEL COM CARACTERISTICAS DO BLOCK (ALTURA, LARGURA, ETC): display: inline-block*/
+            
+            /*display: block;*/
+            border: 5px;
+            border-style: dashed;
+            border-color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CAIXA BOX-LEVEL</h1>
+    <p>Paragrafos sao box-level. Contudo <a href="#">links sao inline-level</a></p>
+</body>
+</html>
